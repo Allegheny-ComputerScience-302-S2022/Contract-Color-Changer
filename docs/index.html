@@ -1,8 +1,24 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorHack</title>
     <link href="style/style.css" rel="stylesheet">
-  <head>
-  <body>
-    <script src="scripts/script.js" type="text/javascript"></script>
-  </body>
+</head>
+<body id = "body">
+    <button id = "get_status_btn" class="glow-on-hover" title = "Get the latest color status of this page from the blockchain!" hidden>Get Color</button>
+        <div id = "setColor">
+            <div id = "color_box">
+                <label for="color_input">Choose your color:</label> <input type="color" id = "color_input">
+            </div>
+
+            <div id = "resetColor" hidden>
+                <button id = "set_status_btn" class="glow-on-hover" title = "Set your own favorite color and everyone around the web can see it! It requires so little ETH!">Set Color</button>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@latest/dist/web3.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
 </html>
